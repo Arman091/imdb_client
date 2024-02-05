@@ -15,6 +15,7 @@ function App() {
 	const [filterGenre, setFilterGenre] = useState([]);
 	const [page, setPage] = useState(1);
 	const [search, setSearch] = useState("");
+	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
 		const getAllMovies = async () => {
