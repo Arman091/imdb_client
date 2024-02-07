@@ -7,8 +7,8 @@ import Pagination from "./components/Pagination";
 import Search from "./components/Search";
 import "./App.css";
 
-const base_url = process.env.REACT_APP_API_URL;
-
+// const base_url = process.env.REACT_APP_API_URL;
+const base_url = "https://imdb-us2w.onrender.com/api/movies/"
 function App() {
 	const [obj, setObj] = useState({});
 	const [sort, setSort] = useState({ sort: "rating", order: "desc" });
