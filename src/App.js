@@ -7,7 +7,7 @@ import Pagination from "./components/Pagination";
 import Search from "./components/Search";
 import "./App.css";
 
-
+// const base_url = process.env.REACT_APP_API_URL;
 const base_url = "https://imdb-us2w.onrender.com/api/movies/"
 function App() {
 	const [obj, setObj] = useState({});
@@ -15,7 +15,7 @@ function App() {
 	const [filterGenre, setFilterGenre] = useState([]);
 	const [page, setPage] = useState(1);
 	const [search, setSearch] = useState("");
-	const [isLoading, setIsLoading] = useState(true);
+	// const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
 		const getAllMovies = async () => {
